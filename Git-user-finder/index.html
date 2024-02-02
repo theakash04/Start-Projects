@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git users</title>
+  <link type="image/png" rel="icon" href="media/github.png">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="code/style.css">
+</head>
+<body>
+  <main>
+    <div class="tittle">
+      <h2>
+        <i class='bx bxl-github'></i>
+        Github user search
+      </h2>
+      <p>Browse user and their profile via <span>Github api</span></p>
+    </div>
+    <div class="topbar">
+      <form>
+        <input type="text" name="search" id="Search" placeholder="Enter username">
+        <button type="button" id="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="results">
+      <div class="user">
+        <img src="" alt="" id="profile">
+        <div class="username" id="username"></div>
+        <div class="details">
+          <span id="followers"></span>
+          <span id="following"></span>
+          <span id="repo"></span>
+        </div>
+        
+        <a href="" id="visit" target="_blank"><button>Go to profile</button></a>
+      </div>      
+
+    </div>
+    
+
+
+  </main>
+  <footer>
+    <a href="https://github.com/theakash04/Git-user-finder">DEVELOPER | DEX</a>
+  </footer>
+
+  <script src="code/app.js"></script>
+</body>
+</html>

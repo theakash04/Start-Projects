@@ -1,0 +1,258 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  padding: 40px  10px 0 10px;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #24292e;
+}
+main{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+}
+.tittle{
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tittle h2{
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.tittle p{
+  text-align: center;
+  font-size: 1rem;
+  width: 90%;
+}
+.tittle p span{
+  color: #2dba4e;
+}
+
+
+.topbar{
+  width: clamp(300px, 100%, 700px);
+  background-color: #2b3137;
+  filter: drop-shadow(0 5px #0000007e);
+  border-radius: 5px;
+  color: #fbfbfb;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar form{
+  display: flex;
+  width: clamp(280px, 100%, 600px);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.topbar form input{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+  font-size: 1.3rem;
+  background-color: #faf9f6;
+}
+.topbar form button{
+  padding: 10px 30px;
+  border: none;
+  width: 100%;
+  background-color: #2dba4e;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.results{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+  gap: 10px;
+}
+.results .user{
+  display: flex;
+  flex-direction: column;
+  background-color: #2b3137;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.results .user img{
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #f4cf3e;
+  aspect-ratio: 1/1;
+}
+.results .user .username{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
+.results .user span{
+  padding-right: 20px;
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.details{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+.details span{
+  padding-right: 20px;
+  padding-top: 15px;
+  width: 100%;
+}
+
+.results .user a{
+  text-decoration: none;
+  margin-top: 20px;
+}
+.results .user a button{
+  background-color: #2dba4e;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+  color: #24292e;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-radius: 10px;
+}
+
+.error{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #2b3137;
+  padding: 30px 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+.error img{
+  width: 250px;
+}
+.error span{
+  position: absolute;
+  font-size: 3rem;
+  font-weight: 800;
+  bottom: 10px;
+  text-align: center;
+}
+.error .response{
+  top: 10px;
+}
+
+
+
+footer{
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+footer a{
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #faf9f6;
+  transition: color 0.15s ease-in-out;
+}
+footer a:hover{
+  color: #2dba4e;
+}
+
+
+
+.loader{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #24292e80;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  justify-content: center;
+}
+.loader span{
+  border: 2px solid #fff;
+  border-top: 2px solid #18b6ff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 750px){
+  .topbar form{
+    flex-direction: row;
+  }
+  .topbar form input{
+    width: 70%;
+  }
+  .topbar form button{
+    width: 40%;
+  }
+  .details{
+    flex-direction: row;
+    padding-bottom: 30px;
+    font-size: 1.4rem;
+  }
+  .results{
+    width: 80%;
+  }
+}
+

@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px 25px;
+  background-color: #212121;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.txt{
+  font-size: 2rem;
+  width: clamp(280px,100% ,600px);
+  font-weight: 600;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.txt span{
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d890d;
+}
+.passwords{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: clamp(280px,100% ,600px);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+  color: #000;
+}
+.passwords span{
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #000;
+}
+.passwords i{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #0d890d;
+}
+
+button{
+  width: clamp(280px,90% ,400px);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  gap: 5px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #0d890d;
+  color: #fff;
+}
+button i{
+  font-size: 1.6rem;
+}
+footer{
+  width: clamp(280px, 100% ,400px);
+  display: grid;
+  padding-top: 10px;
+  place-content: center;
+}
+footer span{
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+a{
+  display: grid;
+  margin: 0% 0% 0% 90%;
+  text-decoration: none;
+  color: #fff;
+}
+a i{
+  font-size: 32px;
+  cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe | WEB GAME</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="styles/cards.css" />
+    <link rel="stylesheet" href="styles/gameBox.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFRElEQVR4nO1Z7WtbVRg/RUU2EDeV1qarrhW6phXBD0LnlIkMJopfBroO/AeEFobsw/ysrvVP8BX0i3+BgkjbJO1s89IsL7Wwpqyty22a3nMTpzXZt0d+J/ckJzf33qTJHcuwBx4K9562v985z8vveS5jR+toPbDlY4wNd4n5DgP8ZcbYH4wx6jJbY4yNt0JAgPf7x+n8W293hQ0NvyRJpJuBP4WNZ874SS+UiRfvd4XphTKNjIxKEgNuBPzYNHH2nCf/OJ68TSuRlOP7XKFMv2k6/bSTo5+zOu0Y/zruBSaTgP9wBIwSGeEl4vmiO+DtLBm3VuueDQ6+QH19zzfs3eIHNL1+m54OBYktzFXtycACfZBIUXL/nncEAN6YukjG7BTxHLcHn9kk4/okGdPvEL+bqz4/duy4MHVvIn+PRn5fFoCfCMzTG9EYXUmm6cJqnI4HA+L5M4tB+iWre3QD+aIA70hCgp+6SPybG8SV2LES2DVKNL6yIkC+GYtRPF9/0pv8gD5KrYn3zy4G626ifQKwnEHGl9MVkF98THzXPJ3MHTI+vVIh99VnxC0+bCXw+cYdAe61cESQ4Q7uKElcTqY8ImBHIp1yBW9HQJ7+r1kHVyzWbgLuhJj40/y7nRMQJHjNnUzjX98QgW63XyWQLZQE+N7FUEsZ7EIsLvbLWPCGAAwnLwlcu0Rcqw82JwLr+j8CkH95uSUCk8m02I8U6x0BJWABXvyccc5OKgHk/McC8yJ17rVQJCciUUFgXuMeEbAGrKaTMWsT2C4xcDZaAfXjtuYKfnXvL3o8ME8nF0NVsp0RcMo2CGwXElYC321lBYHBm0vCpbgNeGSn102in6xveJCFdrRanrcLWAT2jFIn+IEjAb14n96NJwS4UzeX6Idtrc6dICdeDUeqsaJKi/Yr8a3VSoVFkXLK3TI7XX2fuFJB7Sox0qIkwRbmREyMLa/Qc0uh6rNXwmFK7f9dHxMduRDkQbPAw8lbyr8dAXkT329l6Vw0JgJbBT6b2bItct6l0UOYEwHV9gplEQ9ulbmrCfAWrS0C0PMvnh6iEydOtmU9PT3C2v39/n4fhaPp9gngl32+gYdGwOcboEhs7X/sQtzBNKMkAg/y4JEhsGuUhJ6XkhiGFAh5gAqrt0oAqVYpdtzOcDBKZ9cxAbSBKnBIYhQftadFcZLa3ZFAVhfFzrU9NUqiaKJ4qj122wTQgMseFp2U2ozkC2UhzCAL8P69eKLuJhoI8INaP2GnYo2SkCvi/fVJIWM6JoDpgexhnYoN4gECDftQYV1dyEkAGiUyvp0xwV8mvpHp3IUQpHATTA+sDbjVIMxAAPKgaRBbSBjZfVfwbRPA0MkKyk0SPBUKCh0vFaZrFlJV7LVLNbfJbHqXhdDOgQDau1ZSHSQw9kut3zSNanoNPG4j7TzFa4sA9DkAYejUDDyCF5K4Z2GuGiuuBNSAnTLNJTu1RQANBUYbGHFg1OFGANMDKYmbxoA1YFMJ+7mTF3Xgw0RKAMOwyQk8Tlx2UtDzrgScsk3OYXjWKQEUMcwqJQnrTaABlz0sTl9NtQ0EENxqns9sOs+d4E7KQLmjSgz3wKwSIOFOGDohsCEjkHVkD2ttAxsI3M1VKqxLtuEqCUzFvSAAw6AVs0rEhDoSx+gD0wO72X5vb1/DeF3IA6XCcjvDQBngldv0TI1C7yA7IcXOadx1SIV+QjYkndpEiwTEJ6bTQ8OP7CcmZn4NpNHRsYf+ce+8afhmZ4JPsRbWuPk1kLrMUoyxMXaI1d8FH7iHTQOWo3W02ANY/wFQHnJx8kyIBwAAAABJRU5ErkJggg=="
+      type="imgae/x-icon"
+    />
+  </head>
+  <body>
+    <!-- Winner card section -->
+    <div class="winnerScreen hide">
+      <p>Winner</p>
+      <h1></h1>
+      <button>Play Again</button>
+    </div>
+
+    <div class="gameName">
+      <h5>Tic Tac Toe</h5>
+      <span>Get the code</span>
+      <span class="links">
+        <a class="github" href="https://github.com/theakash04/ticTacToe-WebGame">GITHUB</a>
+        <a class="twitter" href="https://twitter.com/THEAkash04"><i class='bx bxl-twitter'></i></a>
+      </span>
+    </div>
+    <main id="game">
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+
+      <button class="gameBox"></button>
+    </main>
+    <button class="resetGame">Reset Game</button>
+    <footer>
+      <h5>DEVELOPER | DEX</h5>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
+</html>

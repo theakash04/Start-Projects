@@ -1,0 +1,104 @@
+button{
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.youtube{
+    background-color: rgb(200, 17, 17);
+    color: white;
+    border: none;
+    padding: 10px 17px; /* Top-bottom | left-right*/
+    border-radius: 3px;
+}
+.Join{
+    background-color: white;
+    color: rgb(0, 145, 255);
+    border: 1px solid rgb(0, 183, 255);
+    padding: 11px 16px;
+    border-radius: 3px;
+}
+.tweet{
+    background-color: rgb(0, 170, 255);
+    color: white;
+    border: none;
+    padding: 12px 19px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;   
+}
+.uber{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 17px;
+}
+
+.Amazon{
+    background-color: rgb(255 216 20);
+    border: none;
+    padding: 12px 70px;
+    border-radius: 20px;
+}
+.github{
+    background-color: rgb(46 164 79);
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.Bootstrap{
+    background-color: rgb(121 82 179);
+    color:white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.Bootstrap1{
+    background-color: white;
+    color: rgb(108 117 125);
+    padding: 11px 29px;
+    border: solid rgb(108 117 125) 1px;
+    border-radius: 3px;
+}
+.lin{
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px 40px;
+    border-radius: 20px;
+}
+.lin1{
+    background-color: white;
+    color: rgb(10, 102, 194);
+    border:solid 1px rgb(10, 102, 194);
+    padding: 11px 28px;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: baseline;
+}
+.b{
+    border: solid black 1px;
+    border-radius: 3px;
+    padding: 10px 16px;
+    margin-left: 0px;
+}
+.n{
+    border: solid black 1px;
+    border-radius: 3px;
+    margin-left: 20px;
+    padding: 10px 16px;
+}
+.pagination>a{
+    margin-left: 15px;
+}
